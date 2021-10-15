@@ -1,0 +1,7 @@
+cache/*
+logs/*
+Tamriel/*
+world/*
+world_nether/*
+world_the_end/*
+.console_history

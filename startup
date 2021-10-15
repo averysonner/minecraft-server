@@ -1,0 +1,1 @@
+nohup java -Xms16G -Xmx16G -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+ZProactive -XX:ZCollectionInterval=600 -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMem -jar paper.jar nogui > /dev/null 2>&1 &
