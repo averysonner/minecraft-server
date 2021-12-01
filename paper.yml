@@ -11,7 +11,7 @@
 # Docs: https://paper.readthedocs.org/ 
 
 verbose: false
-config-version: 22
+config-version: 24
 settings:
   use-display-name-in-quit-message: false
   load-permissions-yml-before-plugins: true
@@ -238,8 +238,30 @@ world-settings:
       MinimumTicks: 100
       MaximumTicks: 600
     despawn-ranges:
-      soft: 32
-      hard: 96
+      monster:
+        soft: 32
+        hard: 96
+      creature:
+        soft: 32
+        hard: 96
+      ambient:
+        soft: 32
+        hard: 96
+      axolotls:
+        soft: 32
+        hard: 96
+      underground_water_creature:
+        soft: 32
+        hard: 96
+      water_creature:
+        soft: 32
+        hard: 96
+      water_ambient:
+        soft: 32
+        hard: 96
+      misc:
+        soft: 32
+        hard: 96
     frosted-ice:
       enabled: true
       delay:
@@ -256,6 +278,7 @@ world-settings:
       zombies: false
       skeletons: false
     hopper:
+      ignore-occluding-blocks: true
       cooldown-when-full: true
       disable-move-event: true
     mob-effects:
@@ -265,10 +288,12 @@ world-settings:
         wither: true
         wither-skeleton: true
     spawn-limits:
-      monsters: -1
-      animals: -1
-      water-animals: -1
-      water-ambient: -1
+      monster: -1
+      creature: -1
+      axolotls: -1
+      underground_water_creature: -1
+      water_creature: -1
+      water_ambient: -1
       ambient: -1
     alt-item-despawn-rate:
       enabled: false
