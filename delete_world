@@ -1,0 +1,18 @@
+echo "You are about to delete this server's world."
+read -p "Are you sure? [y/n]:" answer
+
+case $answer in
+ [yY]* ) rm -r world world_nether world_the_end > /dev/null 2>&1
+         echo "Done."
+         exit;;
+
+ [nN]* ) echo "OK. Nothing has been done."
+         exit;;
+
+     * ) echo "Bad response. Nothing has been done."
+         exit;;
+
+esac
+
+
+
